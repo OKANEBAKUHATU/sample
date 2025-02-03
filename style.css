@@ -51,7 +51,7 @@ nav {
 }
 
 #nav-menu {
-    position: absolute;
+    position: none;
 
 nav ul {
     list-style: none;
