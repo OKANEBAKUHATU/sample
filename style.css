@@ -20,6 +20,12 @@ header {
     font-size: 1.5rem;
 }
 
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .menu-icon, .tel-icon {
     font-size: 2rem;
     cursor: pointer;
