@@ -13,7 +13,11 @@ header {
     background: #333;
     color: white;
     padding: 1rem;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -36,27 +40,29 @@ header {
     height: 24px;
 }
 
-
 /* ナビゲーション */
 nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
+    /* position: absolute; */
+    top: 60px;
+    right: 0;
     width: 100%;
     background: #444;
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 10px 0;
 }
 
 #nav-menu {
-    position: none;
+    position: absolute;
+
+}
 
 nav ul {
     list-style: none;
-    text-align: center;
     width: 100%;
+    text-align: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -70,14 +76,9 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
-    width: 100%;
 }
 
-nav.active {
-    display: block;
-}
-
- /* ハンバーガーメニューが開いたとき */
+/* ハンバーガーメニューを開いた時のスタイル */
 nav.active {
     display: flex;
 }
@@ -85,6 +86,11 @@ nav.active {
 .menu-icon {
     cursor: pointer;
 }
+
+
+
+
+
 
 /* スライドショー */
 .slideshow {
