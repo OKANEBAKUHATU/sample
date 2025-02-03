@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モバイルファーストサイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">サイト名</h1>
+    <div class="header-icons">
+        <div class="tel-icon">
+            <a href="#">
+                <img src="tel-icon.png" alt="電話アイコン">
+            </a>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">LINE</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <div class="slideshow">
+            <div class="slides">
+                <img src="image1.jpeg" class="slide active" alt="スライド1">
+                <img src="image2.jpg" class="slide" alt="スライド2">
+                <img src="image3.jpg" class="slide" alt="スライド3">
+            </div>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-item">案内</div>
+            <div class="menu-item">料金</div>
+        </nav>
+
+        <h2><span>Q & A</span></h2>
+        <div class="qa-section">
+            <div class="qa-item">
+                <div class="qa-question">Q1: サンプルの質問1は何ですか？</div>
+                <div class="qa-answer">A: これはサンプルの回答です。ここに回答内容を記載します。</div>
+            </div>
+            <div class="qa-item">
+                <div class="qa-question">Q2: サンプルの質問2について教えてください。</div>
+                <div class="qa-answer">A: こちらもサンプルの回答です。詳細な説明をここに記載します。</div>
+            </div>
+            <div class="qa-item">
+                <div class="qa-question">Q3: サンプルの質問3の詳細は？</div>
+                <div class="qa-answer">A: サンプル回答3です。必要に応じて内容をカスタマイズしてください。</div>
+            </div>
+        </div>
+
+        <div class="pricing-card">
+            <div class="pricing-title">料金（受講制）</div>
+            <div class="pricing-details">
+                1時間 / 2元<br>
+                6時間パック / 5000円<br>
+                1週間ガチ / 要相談
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <span>連絡先: info@example.com</span>
+            <a href="mailto:info@example.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="メールアイコン"> お問い合わせ
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

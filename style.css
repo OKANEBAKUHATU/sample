@@ -1,0 +1,282 @@
+/* 基本リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu-icon, .tel-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ナビゲーション */
+nav {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #444;
+    display: none;
+    /* position: absolute; */
+}
+
+#nav-menu {
+    position: absolute;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+nav.active {
+    display: block;
+}
+
+/* スライドショー */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ドットナビゲーション */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #333;
+}
+
+/* メニュー */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+/* Q&A セクション */
+.qa-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qa-item {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qa-question {
+    padding: 15px;
+    background: #eee;
+    font-weight: bold;
+}
+
+.qa-answer {
+    padding: 15px;
+}
+
+/* h2 スタイリング（Q&Aセクションのセンタリング） */
+h2 {
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+h2::before, h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background: #ccc;
+}
+
+h2::before {
+    left: 0;
+}
+
+h2::after {
+    right: 0;
+}
+
+h2 span {
+    background: white;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 料金カード */
+.pricing-card {
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pricing-details {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content img {
+    width: 20px;
+    height: 20px;
+}
+
+/* タブレット向け調整 */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .menu {
+        flex-direction: row;
+    }
+    .menu-item {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* PC向け調整 */
+@media (min-width: 1025px) {
+    .menu {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        display: block;
+        position: static;
+        background: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        border: none;
+        padding: 0 15px;
+    }
+    .slide {
+        height: 500px;
+    }
+    
+    /* メインコンテンツの幅調整 */
+    main {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .menu-item {
+        width: 50%;
+        text-align: center;
+    }
+}
