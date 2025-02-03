@@ -20,40 +20,49 @@ header {
     font-size: 1.5rem;
 }
 
-/* .header-icons {
+.header-icons {
     display: flex;
     align-items: center;
     gap: 10px;
-} */
+}
 
 .menu-icon, .tel-icon {
     font-size: 2rem;
     cursor: pointer;
 }
 
+.tel-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+
 /* ナビゲーション */
 nav {
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: #444;
     display: none;
-    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 #nav-menu {
     position: absolute;
 
-}
-
 nav ul {
     list-style: none;
     text-align: center;
+    width: 100%;
 }
 
 nav ul li {
     padding: 15px;
     border-bottom: 1px solid #555;
+    width: 100%;
 }
 
 nav ul li a {
@@ -61,6 +70,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
+    width: 100%;
 }
 
 nav.active {
