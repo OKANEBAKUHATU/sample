@@ -77,6 +77,15 @@ nav.active {
     display: block;
 }
 
+ /* ハンバーガーメニューが開いたとき */
+nav.active {
+    display: flex;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
 /* スライドショー */
 .slideshow {
     position: relative;
