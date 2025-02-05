@@ -359,6 +359,6 @@ footer {
         text-align: center;
     }
     .pricing-container {
-                flex-direction: row;
+                flex-wrap: nowrap;
             }
 }
