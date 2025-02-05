@@ -239,6 +239,49 @@ h2 span {
     line-height: 2;
 }
 
+.pricing-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .plan {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .plan h2 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan ul li {
+            padding: 5px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .basic { background-color: #4A90E2; }
+        .standard { background-color: #50E3C2; }
+        .premium { background-color: #F5A623; }
+
 /* フッター */
 footer {
     background-color: #333;
@@ -315,4 +358,7 @@ footer {
         width: 50%;
         text-align: center;
     }
+    .pricing-container {
+                flex-wrap: wrap;
+            }
 }
