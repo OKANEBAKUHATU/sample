@@ -241,7 +241,7 @@ h2 span {
 
 .pricing-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             gap: 20px;
         }
@@ -359,6 +359,6 @@ footer {
         text-align: center;
     }
     .pricing-container {
-                flex-wrap: wrap;
+                flex-direction: row;
             }
 }
